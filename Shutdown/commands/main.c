@@ -107,7 +107,7 @@ int main() {
         // Check if the user pressed 'c' to cancel
         if (_kbhit() && _getch() == 'c') {
 
-            cancelShutdownFunc();
+            cancelShutdown();
             cancel = 1;
             break;
 
@@ -117,7 +117,7 @@ int main() {
     // Execute the action (shutdown, restart or hibernate) if not canceled
     if (!cancel) {
 
-        executeShutdownFunc(choice - '0');
+        executeShutdown(choice - '0');
 
     }
 
