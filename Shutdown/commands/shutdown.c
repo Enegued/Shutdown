@@ -6,7 +6,7 @@
 
 // Executes the system command for shutdown, restart, or hibernate based on the user's choice.
 // The choice is passed as an integer (1 = shutdown, 2 = restart, 3 = hibernate).
-void executeShutdownFunc(int choice) { 
+void executeShutdown(int choice) { 
 
     switch(choice) { 
 
@@ -34,7 +34,7 @@ void executeShutdownFunc(int choice) {
 
 // Cancels the scheduled shutdown by invoking the appropriate system command.
 // Also logs the cancellation to the log file.
-void cancelShutdownFunc() {
+void cancelShutdown() {
 
     system("shutdown /a"); // Abort the scheduled shutdown
     printf("\nShutdown canceled.\n");
