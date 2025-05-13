@@ -1,4 +1,4 @@
-# Program Name
+# ShutTheFuckDown
 
 ## Description
 
